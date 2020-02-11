@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: 디지털포렌식 전문기업 | 주식회사 유락
-email: your-email@example.com
+email: bongseok.you@urock.kr
 description: > # this means to ignore newlines until "baseurl:"
   Yet another Jekyll theme. It is designed for business purpose and ported by 
   Melvin Ch'ng.
@@ -22,12 +22,12 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Company Information
-company_name: Johns, Smith & Associates
-address_line: Via Ludovisi 39-45, Rome, 54267, Italy
-telephone_number: 1.800.245.356
-fax_number: 1.800.245.357
-company_email: hello@LawOffice.org
-google_map: https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3618.727010735933!2d91.837871!3d24.907291700000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1404919738144
+company_name: UROCK INC.
+address_line: 경기도 성남시 분당구 대왕판교로 645번길 12, 4층 융합보안지원센터 C07호
+telephone_number: 010-9017-7370
+#fax_number: 1.800.245.357
+company_email: bongseok.you@urock.kr
+google_map: https://goo.gl/maps/G9sh24Zt8kYurbVv6
 
 # Social Link
 facebook_link: http://www.facebook.com
