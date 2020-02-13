@@ -7,12 +7,30 @@ published: true
 
 <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script>
+
+  function isEmpty(obj) {
+    for(var key in obj) {
+      if(obj.hasOwnProperty(key))
+        return false;
+    }
+    return true;
+  }
+
   $(document).ready(function() {
 
     $("#btn1").click(function onClick(){
       var name = $("#fullname").val();
+      if(isEmpty(name)){alert('이름을 입력해주세요');}
+      return;
+
       var email = $("#email").val();
+      if(isEmpty(email)){alert('이메일을 입력해주세요');}
+      return;
+
       var message = $("#message").val();
+      if(isEmpty(message)){alert('메세지를 입력해주세요');}
+      return;
+
       message = message.replace(/\n/gi,'%0A');
       var text = "이름: " + name + "\n" + "이메일: " + email + "\n" + "메세지: " + message
       text = text.replace(/\n/gi,'%0A');
