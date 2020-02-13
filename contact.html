@@ -5,6 +5,33 @@ published: true
 ---
 <!-- Main Container -->
 
+<script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+  $(document).ready(function() {
+
+    $("#btn1").click(function onClick(){
+      var name = $("#fullname").val();
+      var email = $("#email").val();
+      var message = $("#message").val();
+      message = message.replace(/\n/gi,'%0A');
+      var text = "이름: " + name + "\n" + "이메일: " + email + "\n" + "메세지: " + message
+      text = text.replace(/\n/gi,'%0A');
+
+      $.ajax({
+        url: '{{ site.telegram_api }}'+text,
+        success:function(data){
+          if(data.ok) {
+            alert('전송되었습니다');
+            $("#fullname").val('');
+            $("#email").val('');
+            $("#message").val('');
+          }
+        }
+      })
+    });
+  });
+</script>
+
 <div class="container-fluid-kamn">
   <div class="row">
     <div>
@@ -42,7 +69,7 @@ published: true
 
           <div id="contact-response"></div>
           
-          <form action="http://templates.designorbital.com/baleen/contact.php" method="post" id="contact-form">
+<!--          <form action="http://templates.designorbital.com/baleen/contact.php" method="post" id="contact-form">-->
             <fieldset>
               <div class="form-group form-group-fullname">
                 <label class="control-label" for="fullname">NAME *</label>
@@ -56,9 +83,10 @@ published: true
                 <label class="control-label" for="message">MESSAGE *</label>
                 <textarea class="form-control" name="message" id="message" rows="3"></textarea>
               </div>           
-              <button type="submit" class="btn btn-primary">Submit</button>
+<!--              <input type="button" onclick="execute()" class="btn btn-primary">Submit</input>-->
+              <button id="btn1" class="btn btn-primary">Submit</button>
             </fieldset>
-          </form>
+<!--          </form>-->
           
         </div> 
       </div>
