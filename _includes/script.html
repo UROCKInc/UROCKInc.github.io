@@ -1,6 +1,23 @@
 <script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script>
 <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="../js/wow.min.js"></script>
+<!--<script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>-->
+<script>
+    $(document).ready(function() {
+        $('#header_home').attr('class', '');
+        $('#header_about').attr('class', '');
+        $('#header_services').attr('class', '');
+        $('#header_team').attr('class', '');
+        $('#header_contact').attr('class', '');
+
+        var link = document.location.pathname;
+        if(link == '/index.html') $('#header_home').attr('class','active');
+        if(link == '/about.html') $('#header_about').attr('class','active');
+        if(link == '/blog.html') $('#header_services').attr('class','active');
+        if(link == '/team.html') $('#header_team').attr('class','active');
+        if(link == '/contact.html') $('#header_contact').attr('class','active');
+    });
+</script>
 <script>
   new WOW().init();
 </script>
