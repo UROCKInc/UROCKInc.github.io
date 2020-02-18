@@ -11,11 +11,19 @@
         $('#header_contact').attr('class', '');
 
         var link = document.location.pathname;
-        if(link == '/index.html') $('#header_home').attr('class','active');
-        if(link == '/about.html') $('#header_about').attr('class','active');
-        if(link == '/blog.html') $('#header_services').attr('class','active');
-        if(link == '/team.html') $('#header_team').attr('class','active');
-        if(link == '/contact.html') $('#header_contact').attr('class','active');
+        if(link == '/index.html') {
+            $('#header_home').attr('class', 'active');
+        }else if(link == '/about.html'){
+            $('#header_about').attr('class','active');
+        }else if(link == '/blog.html'){
+            $('#header_services').attr('class','active');
+        }else if(link == '/team.html'){
+            $('#header_team').attr('class','active');
+        }else if(link == '/contact.html'){
+            $('#header_contact').attr('class','active');
+        }else{
+            $('#header_home').attr('class', 'active');
+        }
     });
 </script>
 <script>
