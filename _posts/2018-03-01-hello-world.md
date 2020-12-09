@@ -1,15 +1,18 @@
 ---
-title: "Alice in Wonderland, part dos"
-description: "'You ought to be ashamed of yourself for asking such a simple question,' added the Gryphon; and then they both sat silent and looked at poor Alice, who felt ready to sink into the earth. At last the Gryphon said to the Mock Turtle, 'Drive on, old fellow! Don't be all day about it!' and he went on in these words:
-'Yes, we went to school in the sea, though you mayn't believe it—'
-'I never said I didn't!' interrupted Alice.
-'You did,' said the Mock Turtle."
-picture: blog1.jpg
+title: "포렌식 컨설팅 및 솔루션 공급"
+description: "다양한 컨설팅 경험을 통해 기업 환경에 적합한 맞춤형 디지털포렌식 솔루션 제안"
+description_option1: "컴퓨터포렌식"
+description_option2: "모바일포렌식"
+description_option3: "네트워크포렌식"
+description_option4: "SNS포렌식"
+description_option5: "테이터복구"
+description_option6: "기업 맞춤형 보안/랩 구축 컨설팅"
+picture: service_img4.png
 
-label_default: "alice" 
-label_primary: "story"
-label_success: "blog"
-label_info: "personal"
-label_warning: "warning"
-label_danger: "danger"
+label_default: "태그1" 
+label_primary: "태그2"
+label_success: "태그3"
+label_info: "태그4"
+label_warning: "태그5"
+label_danger: "태그6"
 ---
